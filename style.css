@@ -20,12 +20,12 @@ body{
     flex-direction: column;
     align-items: center;
     margin-top: 25px;
-    margin-bottom: 80px;
+    margin-bottom: 150px;
 }
 
 .kumpulan-logo{
-    width: 100px;
-    height: 130px;
+    width: 200px;
+    height: 230px;
     display: flex;
     margin-top: 20px;
     flex-direction: column;
@@ -39,11 +39,11 @@ body{
 }
 
 .tulisan-suka-koding,.tls-suka-koding{
-    margin-top: 10px;
+    margin-top: 20px;
     text-decoration: none;
     color: #53C0B9;
     display: flex;
-    font-size: 17px;
+    font-size: 30px;
     transition: all ease 0.5s;
 }
 
@@ -52,7 +52,8 @@ body{
 }
 
 .kotak-support-sk{
-    width: 65%;
+    width: 75%;
+    margin-top: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -69,17 +70,17 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     padding-left: 20px;
     text-align: center;
     padding-right: 20px;
-    font-size: 13px;
+    font-size: 20px;
     box-sizing: border-box;
     justify-content: center;
     border: 1.9px solid #53C0B9;
     border-radius: 3px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     text-decoration: none;
     color:#53C0B9;
     cursor: pointer;
@@ -89,12 +90,13 @@ body{
 .kumpulan-pendiri-sk{
     height: 0px;
     justify-content: space-evenly;
-    margin-top: -25px;
+    margin-top: -45px;
     background:  #53C0B9;
     opacity: 0;
     transition: all linear 0.5s;
-    padding-bottom: 5px;
-    padding-top: 5px;
+    padding-bottom: 15px;
+    overflow: hidden;
+    padding-top: 15px;
     position: relative;
 }
 
@@ -103,7 +105,7 @@ body{
     visibility: hidden;
     text-decoration: none;
     color: #ffffff;
-    width: 110%;
+    width: 130%;
     height: 100%;
     align-items: center;
     justify-content: center;
@@ -116,18 +118,20 @@ body{
 .label-isi-kotak-support-sk{
     flex-direction: row;
     position: relative;
+    color: white;
+    background:  #53C0B9;
     z-index: 100;
 }
 
 .arrow-down{
-    width: 12px;
+    width: 20px;
     position: absolute;
-    right: 10px;
+    right: 25px;
     transition: all ease .5s;
 }
 
 .kotak-check:checked ~ .kumpulan-pendiri-sk{
-    height: 100px;
+    height: 250px;
     opacity: 1;
     margin-top: -5px;
     transition: all ease 1s;
@@ -152,15 +156,26 @@ body{
     color: #02081B;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 680px) {
     .kotak-support-sk{
         width: 90%;
     }
 }
 
-@media screen and (max-width: 365px) {
+@media screen and (max-width: 570px) {
     .label-isi-kotak-support-sk{
-        padding-left: 40px;
-        padding-right: 40px;
+        padding-left: 75px;
+        padding-right: 75px;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+    .arrow-down{
+        right: 15px;
+    }
+    .label-isi-kotak-support-sk{
+        padding-left: 20px;
+        padding-right: 60px;
     }
 }
