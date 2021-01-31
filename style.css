@@ -970,7 +970,7 @@ div.buttonVue{
     }
 
     .kumpulan-tulisan-header-bawah{
-        margin-top: 40px;
+        margin-top: -10px;
     }
 
     .kumpulan-header-bawah{
@@ -1285,6 +1285,10 @@ div.buttonVue{
         width: 240px;
     }
 
+    .kumpulan-tulisan-header-bawah{
+        margin-top: -20px;
+    }
+
     .logo-header-r{
         width: 40px;
     }
@@ -1318,7 +1322,7 @@ div.buttonVue{
     }
 
     .button-header-bawah{
-        margin-top: 30px;
+        margin-top: 40px;
     }
 
     .gambar-header-bawah,.gambar-bagian-isi-atas,.gambar-bagian-isi-tengah{
